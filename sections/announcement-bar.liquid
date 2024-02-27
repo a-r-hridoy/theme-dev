@@ -1,27 +1,20 @@
 {% if section.settings.show_announcment %}
   <section>
-    <div class="announcment-bar">
+    <div class="announcement-bar">
       <div class="announcement-bar-left-section">
         {% if section.settings.image != blank %}
-          <img 
-          width="40" 
-          height="40" 
-          loading="lazy" 
-          src="{{section.settings.image | image_url }}">
-        
-            {% else %}
-            <img 
-            width="40" 
-            height="40" 
-            loading="lazy" 
-            src="{{ section.settings.image | image_url : 'a.png' | asset_url }}">
-          {%endif%}
-        </div>
-        <div class="announcement-bar-right-section">
-         
-          </div>
+          <img width="40" height="40" loading="lazy" src="{{ section.settings.image | img_url: '40x40' }}">
+        {% else %}
+          <img width="40" height="40" loading="lazy" src="{{ 'a.png' | asset_url }}">
+        {% endif %}
+      </div>
+      <div class="announcement-bar-right-section">
+        <!-- Additional content here -->
+      </div>
     </div>
-    </section>
+  </section>
+  
+    
   {% endif %}
   
   {% schema %}
