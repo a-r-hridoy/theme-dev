@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My Website Title</title>
-    <link rel="stylesheet" href="style.css">
+    {% comment %} {%  render 'pagefly-head' %} {% endcomment %}
+    {{content_for_header}}
   </head>
   <body>
-    <div id="announcement-bar">
-      {% comment %} <p>Important announcement goes here!</p> {% endcomment %}
-    </div>
     <main id="main" role="main">
-      {% comment %} <p>This is the main content of the page.</p> {% endcomment %}
+      {{content_for_layout}}
     </main>
   </body>
 </html>
