@@ -9,7 +9,7 @@
         {% endif %}
       </div>
       <div class="announcement-bar-right-section">
-        <!-- Additional content here -->
+          <h2>{{section.settings.text}}</h2>
       </div>
     </div>
   </section>
@@ -32,6 +32,12 @@
         "id": "image",
         "label": "Pick image",
         "info": "PNG recommended format"
+      },
+      {
+        "type": "text",
+        "id": "text",
+        "label": "Rich Text",
+        "default": "Text"
       }
     ],
     "presets": []
