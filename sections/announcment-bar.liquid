@@ -1,20 +1,47 @@
-{% if section.settings.['show_announcment'] %}
-
-
-<section>Announcment Bar</section>
-{%endif%}
-
-{% schema %}
-   {
-     "name": "Announcment Bar",
-     "settings": [
+{% if section.settings.show_announcment %}
+  <section>
+    <div class="announcment-bar">
+      <div class="annoucment-bar-left-section">
+        {% if section.settings.image != blank %}
+          <img 
+          width="40" 
+          height="40" 
+          loading="lazy" 
+          src="{{section.settings.image | image_url }}">
+        
+            {% else %}
+            <img 
+            width="40" 
+            height="40" 
+            loading="lazy" 
+            src="{{ section.settings.image | image_url : 'a.png' | asset_url }}">
+          {%endif%}
+        </div>
+        <div class="annoucment-bar-right-section">
+         
+          </div>
+    </div>
+    </section>
+  {% endif %}
+  
+  {% schema %}
+  {
+    "name": "Announcment Bar",
+    "settings": [
       {
-     "type": "checkbox",
-     "id": "show-announcment",
-     "label": "Show announcement",
-     "default": true
-   }
-     ],
-     "presets": []
-   }
- {% endschema %}
+        "type": "checkbox",
+        "id": "show-announcment",
+        "label": "Show announcement",
+        "default": true
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Pick image",
+        "info": "PNG recommended format"
+      }
+    ],
+    "presets": []
+  }
+  {% endschema %}
+  
