@@ -19,29 +19,30 @@
   {% endif %}
   
   {% schema %}
-  {
-    "name": "Announcment Bar",
-    "settings": [
-      {
-        "type": "checkbox",
-        "id": "show-announcment",
-        "label": "Show announcement",
-        "default": true
-      },
-      {
-        "type": "image_picker",
-        "id": "image",
-        "label": "Pick image",
-        "info": "PNG recommended format"
-      },
-      {
-        "type": "text",
-        "id": "text",
-        "label": "Rich Text",
-        "default": "Text"
-      }
-    ],
-    "presets": []
-  }
-  {% endschema %}
+    {
+      "name": "Announcement Bar",
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_announcement",
+          "label": "Show announcement",
+          "default": true
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Pick image",
+          "info": "PNG recommended format"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Rich Text",
+          "default": "Text"
+        }
+      ],
+      "presets": [      ]
+    }
+    {% endschema %}
+    
   
