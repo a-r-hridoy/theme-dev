@@ -11,8 +11,8 @@
       <img
         src="{{ logo | img_url }}"
         alt="{{ shop.name }}"
-        width="200"
-        height="200">
+        width="100"
+        height="100">
 
     {% else %}
       <a class="navbar-brand" href="#">{{ shop.name }}</a>
@@ -30,35 +30,28 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         {% for link in menu.links %}
-          <li class="nav-item">
+          <li class="nav-item {% if link.links.size > 0 %} dropdown {% endif %}">
             <a
-              class="nav-link active"
-              aria-current="page"
-              href="{{ link.url }}">{{ link.title }}</a>
+              class="nav-link {% if link.links.size > 0 %}dropdown-toggle_{{ forloop.index }}{% endif %}"
+              href="{{ link.url }}"
+              {% if link.links.size > 0 %}
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              {% endif %}>
+              {{ link.title }}
+            </a>
+            {% if link.links.size > 0 %}
+              <ul class="dropdown-menu">
+                {% for dropLink in link.links %}
+                  <li>
+                    <a class="dropdown-item" href="{{dropLink.url}}">{{ dropLink.title }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+            {% endif %}
           </li>
         {% endfor %}
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li>
-              <a class="dropdown-item" href="#">Action</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">Another action</a>
-            </li>
-            <li><hr class="dropdown-divider"></li>
-            <li>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </li>
-          </ul>
-        </li>
       </ul>
       {% if enable_search %}
         <form class="d-flex" role="search">
