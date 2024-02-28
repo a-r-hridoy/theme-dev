@@ -9,7 +9,7 @@
   <div class="container-fluid">
     {% if logo != nil %}
       <img
-        src="{{ logo_url }}"
+        src="{{ logo | img_url }}"
         alt="{{ shop.name }}"
         width="200"
         height="200">
