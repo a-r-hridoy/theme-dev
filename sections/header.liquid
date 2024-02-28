@@ -32,7 +32,7 @@
         {% for link in menu.links %}
           <li class="nav-item {% if link.links.size > 0 %} dropdown {% endif %}">
             <a
-              class="nav-link {% if link.links.size > 0 %}dropdown-toggle_{{ forloop.index }}{% endif %}"
+              class="nav-link {% if link.links.size > 0 %}dropdown-toggle dropdown-toggle_{{ forloop.index }}{% endif %}"
               href="{{ link.url }}"
               {% if link.links.size > 0 %}
               role="button"
