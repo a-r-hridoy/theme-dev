@@ -1,0 +1,227 @@
+.navbar {
+   background-color: white;
+   padding: 15px;
+}
+.navbar .container {
+   position: relative;
+}
+.navbar .navbar-collapse ul {
+   margin-right: 50px;
+}
+.navbar .navbar-collapse ul li a {
+   font-size: 17px;
+   margin: 0 7px;
+   font-weight: 400;
+   text-transform: capitalize;
+   color: black;
+   transition: 0.5s;
+}
+.navbar .navbar-collapse ul li a:hover {
+   color: red;
+}
+.navbar .navbar-collapse ul li a .fa-angle-down {
+   font-size: 12px;
+   transition: 0.5s;
+}
+.navbar .navbar-collapse ul li a .fa-angle-up {
+   font-size: 12px;
+   opacity: 0;
+   transition: 0.5s;
+   visibility: hidden;
+   position: absolute;
+   right: 15px;
+   top: 12px;
+}
+.navbar .navbar-collapse ul li:hover .fa-angle-down {
+   opacity: 0;
+   visibility: hidden;
+}
+.navbar .navbar-collapse ul li:hover .fa-angle-up {
+   opacity: 1;
+   visibility: visible;
+}
+.navbar .navbar-collapse ul li .active {
+   color: red;
+}
+.navbar .navbar-collapse ul .nav-item .page-drop {
+   position: relative;
+}
+.navbar .navbar-collapse ul .nav-item .page-drop:active a {
+   color: red;
+}
+.navbar .navbar-collapse ul .nav-item .page-drop .page-item {
+   padding: 20px;
+   position: absolute;
+   width: 300px;
+   top: 50px;
+   visibility: hidden;
+   opacity: 0;
+   background-color: white !important;
+   border-top: 2px solid red;
+   z-index: 2;
+}
+.navbar .navbar-collapse ul .nav-item .page-drop .page-item ul {
+   margin-right: 0;
+}
+.navbar .navbar-collapse ul .nav-item .page-drop .page-item ul li {
+   margin: 8px 0;
+   padding: 8px 0px;
+}
+.navbar .navbar-collapse ul .nav-item .page-drop:hover .page-item {
+   visibility: visible;
+   margin-top: -5px;
+   transition: 0.5s;
+   opacity: 1;
+}
+.navbar .navbar-collapse .categories-button {
+   display: none;
+}
+.navbar .nav-right {
+   display: flex;
+   align-items: center;
+}
+.navbar .nav-right form .form-control {
+   border: none;
+   width: 100%;
+}
+.navbar .nav-right form .form-control:focus {
+   outline: 0;
+   box-shadow: 0 0 0.25rem rgba(13, 110, 253, 0);
+}
+.navbar .nav-right form button {
+   background-color: red;
+   border: none;
+   padding: 5px 10px;
+   margin-right: 20px;
+}
+.navbar .nav-right form button i {
+   color: white;
+}
+.navbar .nav-right .search-icon {
+   display: none;
+}
+.navbar .nav-right .search-icon button {
+   border: none;
+   padding: 0;
+}
+.navbar .nav-right .search-icon button i {
+   font-size: 20px;
+   margin: 0 10px;
+   color: black;
+   font-weight: 300;
+}
+.navbar .nav-right .nav-icon a i {
+   font-size: 20px;
+   margin: 0 5px;
+   color: black;
+}
+.navbar .nav-right .nav-icon a i:active i {
+   color: red I !important;
+}
+.navbar .nav-right .nav-icon .account {
+   position: relative;
+}
+.navbar .nav-right .nav-icon .account img {
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+}
+.navbar .nav-right .nav-icon .account .account-drop {
+   padding: 15px;
+   position: absolute;
+   width: 250px;
+   height: 125px;
+   top: 60px;
+   right: 0;
+   visibility: hidden;
+   opacity: 0;
+   background-color: white !important;
+   border-top: 2px solid red;
+   border-radius: 5px;
+   transition: 0.5s;
+}
+.navbar .nav-right .nav-icon .account .account-drop ul li {
+   margin: 5px 0;
+   padding: 8px 0px;
+}
+.navbar .nav-right .nav-icon .account .account-drop ul li a {
+   color: black;
+   transition: 0.5s;
+}
+.navbar .nav-right .nav-icon .account .account-drop ul li a:hover {
+   color: red;
+}
+.navbar .nav-right .nav-icon .account:hover .account-drop {
+   visibility: visible;
+   opacity: 1;
+   top: 50px;
+}
+.navbar .dropdown {
+   position: relative;
+   display: inline-block;
+}
+.navbar .dropdown .dropbtn {
+   background-color: rgba(0, 0, 0, 0);
+   padding: 16px;
+   font-size: 16px;
+   border: none;
+}
+.navbar .dropdown .dropbtn span {
+   position: absolute;
+   top: 5px;
+   right: 10px;
+   border: 1px solid#ddd;
+   width: 18px;
+   height: 18px;
+   font-size: 14px;
+   color: black;
+   text-align: center;
+   border-radius: 50%;
+}
+.side-menu .offcanvas .offcanvas-header {
+   background-color: red;
+}
+.side-menu .offcanvas .offcanvas-header h5 {
+   color: white;
+}
+.side-menu .offcanvas .offcanvas-header button {
+   border: none;
+   color: white;
+   background-color: rgba(0, 0, 0, 0);
+   font-size: 20px;
+}
+.side-menu .offcanvas .offcanvas-body {
+   padding: 0;
+   background-color: white;
+}
+.side-menu .offcanvas .offcanvas-body .categories-nav-item ul li a {
+   font-size: 16px;
+   text-transform: capitalize;
+   color: #ddd;
+   border-bottom: 1px solid #ddd;
+   padding: 12px 10px;
+   display: flex;
+   align-items: center;
+}
+.side-menu
+   .offcanvas
+   .offcanvas-body
+   .categories-nav-item
+   ul
+   li
+   .accordion-button
+   i {
+   position: absolute;
+   right: 10px;
+}
+.side-menu
+   .offcanvas
+   .offcanvas-body
+   .categories-nav-item
+   ul
+   li
+   .accordion-collapse
+   .accordion-body {
+   padding: 0 10px;
+   background-color: white;
+}

@@ -1,32 +1,33 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  {{content_for_header}}
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    {{ 'theme.css |  asset_url |  stylesheet_tag' }}
+    {{ content_for_header }}
+  </head>
+  <body>
 
-<div class="main-body">
+    <div class="main-body">
 
-  {% comment %} header start {% endcomment %}
-  {% section "header" %}
-  {% comment %} header end {% endcomment %}
+      {% comment %} header start {% endcomment %}
+      {% section "header" %}
+      {% comment %} header end {% endcomment %}
 
-  <main class="main">
-    {{content_for_layout}}
-  </main>
+      <main class="main">
+        {{ content_for_layout }}
+    </main>
 
-  {% comment %} footer-start {% endcomment %}
-  {%  section  "footer" %}
-  {% comment %} footer-end {% endcomment %}
+      {% comment %} footer-start {% endcomment %}
+      {% section "footer" %}
+    {% comment %} footer-end {% endcomment %}
 
-</div>
+    </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
 
 
-</body>
+  </body>
 </html>
