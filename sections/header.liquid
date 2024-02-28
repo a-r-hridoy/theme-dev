@@ -1,71 +1,72 @@
 {% liquid
   assign logo = section.settings.logo
+  assign user_img = section.settings.user_img
   assign menu = section.settings.menu
   assign enable_search = section.settings.enable_search_box
 %}
 
-
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    {% if logo != nil %}
-      <img
-        src="{{ logo | img_url }}"
-        alt="{{ shop.name }}"
-        width="100"
-        height="100">
-
-    {% else %}
-      <a class="navbar-brand" href="#">{{ shop.name }}</a>
-    {%- endif -%}
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        {% for link in menu.links %}
-          <li class="nav-item {% if link.links.size > 0 %} dropdown {% endif %}">
-            <a
-              class="nav-link {% if link.links.size > 0 %}dropdown-toggle dropdown-toggle_{{ forloop.index }}{% endif %}"
-              href="{{ link.url }}"
-              {% if link.links.size > 0 %}
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-              {% endif %}>
-              {{ link.title }}
-            </a>
-            {% if link.links.size > 0 %}
-              <ul class="dropdown-menu">
-                {% for dropLink in link.links %}
-                  <li>
-                    <a class="dropdown-item" href="{{dropLink.url}}">{{ dropLink.title }}</a>
-                  </li>
-                {% endfor %}
-              </ul>
-            {% endif %}
-          </li>
-        {% endfor %}
-      </ul>
-      {% if enable_search %}
-        <form class="d-flex" role="search">
-          <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      {% endif %}
-    </div>
-  </div>
-</nav>
+{% comment %} 
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              {% if logo != nil %}
+                <img
+                  src="{{ logo | img_url }}"
+                  alt="{{ shop.name }}"
+                  width="100"
+                  height="100">
+          
+              {% else %}
+                <a class="navbar-brand" href="#">{{ shop.name }}</a>
+              {%- endif -%}
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  {% for link in menu.links %}
+                    <li class="nav-item {% if link.links.size > 0 %} dropdown {% endif %}">
+                      <a
+                        class="nav-link {% if link.links.size > 0 %}dropdown-toggle dropdown-toggle_{{ forloop.index }}{% endif %}"
+                        href="{{ link.url }}"
+                        {% if link.links.size > 0 %}
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        {% endif %}>
+                        {{ link.title }}
+                      </a>
+                      {% if link.links.size > 0 %}
+                        <ul class="dropdown-menu">
+                          {% for dropLink in link.links %}
+                            <li>
+                              <a class="dropdown-item" href="{{dropLink.url}}">{{ dropLink.title }}</a>
+                            </li>
+                          {% endfor %}
+                        </ul>
+                      {% endif %}
+                    </li>
+                  {% endfor %}
+                </ul>
+                {% if enable_search %}
+                  <form class="d-flex" role="search">
+                    <input
+                      class="form-control me-2"
+                      type="search"
+                      placeholder="Search"
+                      aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                {% endif %}
+              </div>
+            </div>
+</nav> {% endcomment %}
 
 <!-- navbar-start -->
 <nav class="navbar navbar-expand-xl">
@@ -127,6 +128,11 @@
                   <a href="product-grid.html" href="product-grid.html">
                     <span>product grid
  
+ 
+ 
+ 
+ 
+ 
                                                 view</span>
                   </a>
                 </li>
@@ -134,12 +140,22 @@
                   <a href="product-list.html" href="product-list.html">
                     <span>product list
  
+ 
+ 
+ 
+ 
+ 
                                                 view</span>
                   </a>
                 </li>
                 <li>
                   <a href="product-details.html" href="product-details.html">
                     <span>product
+ 
+ 
+ 
+ 
+ 
  
                                                 details</span>
                   </a>
@@ -209,10 +225,10 @@
       <div class="nav-icon d-flex align-items-center">
         <div class="account">
           <img
-            src="{{ logo | img_url }}"
+            src="{{ user_img | img_url }}"
             alt="{{ shop.name }}"
-            width="100"
-            height="100">
+            width="50"
+            height="50">
           <div class="account-drop">
             <ul>
               <li><a href="#">Log in</a></li>
@@ -250,11 +266,19 @@
         "id": "logo",
         "label": "Select logo",
         "info": "Recommnended siz: 100x100px"
-      }, {
+      },
+      {
+        "type": "image_picker",
+        "id": "user_img",
+        "label": "Select user_img",
+        "info": "Recommnended siz: 50x50px"
+      },
+      {
         "type": "link_list",
         "id": "menu",
         "label": "Select Menu"
-      }, {
+      },
+      {
         "type": "header",
         "content": "Search bar"
       }, {
