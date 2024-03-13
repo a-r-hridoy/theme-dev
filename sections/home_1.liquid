@@ -1,12 +1,22 @@
 <section class="home">
   <div class="home-section">
     <div class="container">
-      <div class="row align-item-center">
+      <div class="row d-flex flex-column justify-content-center">
         <div class="col-md-6">
           <div class="text-column">
-            <h2>Welcome to Our Store</h2>
-            <p>This is some introductory text about our store.</p>
+            <h2>{{ section.settings.title }}</h2>
+            <p>{{ section.settings.intro_text }}</p>
+            <form>
+              <label for="location">Location:</label>
+              <input
+                type="text"
+                id="location"
+                name="location"
+                placeholder="Enter your location...">
+              <button type="submit">Pickup</button>
+            </form>
           </div>
+
         </div>
         <div class="col-md-6">
           <div class="image-column">
@@ -30,6 +40,40 @@
         "type": "image_picker",
         "id": "image",
         "label": "Background Image"
+      }, {
+        "type": "text",
+        "id": "title",
+        "label": "Section Title",
+        "default": "Welcome to Our Store"
+      }, {
+        "type": "text",
+        "id": "intro_text",
+        "label": "Introductory Text",
+        "default": "This is some introductory text about our store."
+      }
+    ],
+    "blocks": [
+      {
+        "type": "form",
+        "name": "Pickup Form",
+        "settings": [
+          {
+            "type": "text",
+            "id": "location_label",
+            "label": "Location Label",
+            "default": "Location:"
+          }, {
+            "type": "text",
+            "id": "location_placeholder",
+            "label": "Location Placeholder",
+            "default": "Enter your location..."
+          }, {
+            "type": "text",
+            "id": "button_label",
+            "label": "Button Label",
+            "default": "Pickup"
+          }
+        ]
       }
     ],
     "presets": [
@@ -39,6 +83,5 @@
       }
     ]
   }
-
 
 {% endschema %}

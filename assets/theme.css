@@ -244,7 +244,7 @@
 
 /* Adjust styles for the text column */
 .text-column {
-   color: #ffffff; /* Adjust text color */
+   color: #000; /* Adjust text color */
 }
 
 /* Adjust styles for the image column */
