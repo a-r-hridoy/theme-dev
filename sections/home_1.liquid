@@ -1,0 +1,44 @@
+<section class="home">
+  <div class="home-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="text-column">
+            <h2>Welcome to Our Store</h2>
+            <p>This is some introductory text about our store.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="image-column">
+            <img
+              src="{{ block.settings.image | img_url: 'large' }}"
+              alt="{{ block.settings.image }} "
+              width="auto"
+              height="auto">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Home Section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Background Image"
+      }
+    ],
+    "presets": [
+      {
+        "category": "Custom",
+        "name": "Home Section"
+      }
+    ]
+  }
+
+
+{% endschema %}
