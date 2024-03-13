@@ -1,12 +1,35 @@
 {
-   "sections": {
-      "banner": {
-         "type": "banner",
-         "disabled": true,
-         "settings": {}
+  "sections": {
+    "banner": {
+      "type": "banner",
+      "disabled": true,
+      "settings": {
       }
-   },
-   "order": [
-    "banner"
-   ]
+    },
+    "home_1_KN4wFP": {
+      "type": "home_1",
+      "blocks": {
+        "form_R7bxJR": {
+          "type": "form",
+          "settings": {
+            "location_label": "Location:",
+            "location_placeholder": "Enter your location...",
+            "button_label": "Pickup"
+          }
+        }
+      },
+      "block_order": [
+        "form_R7bxJR"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/134282629.jpg",
+        "title": "Welcome to Our Storedfsdfsdafdsf",
+        "intro_text": "This is some introductory text about our store."
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "home_1_KN4wFP"
+  ]
 }
