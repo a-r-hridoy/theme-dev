@@ -256,3 +256,34 @@
    max-width: 100%;
    height: auto;
 }
+
+/* home-2 */
+
+.home-section-2 {
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+/* Style for the form input */
+form input[type="text"] {
+   width: 100%;
+   padding: 10px;
+   margin-bottom: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+}
+
+/* Style for the form button */
+form button[type="submit"] {
+   background-color: #007bff; /* Change to your desired button color */
+   color: #fff;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+/* Hover effect for the form button */
+form button[type="submit"]:hover {
+   background-color: #0056b3; /* Change to a darker shade for hover effect */
+}
