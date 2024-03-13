@@ -6,33 +6,11 @@
       "settings": {
       }
     },
-    "home_1_KN4wFP": {
-      "type": "home_1",
-      "blocks": {
-        "form_R7bxJR": {
-          "type": "form",
-          "settings": {
-            "location_label": "Location:",
-            "location_placeholder": "Enter your location...",
-            "button_label": "Pickup"
-          }
-        }
-      },
-      "block_order": [
-        "form_R7bxJR"
-      ],
-      "disabled": true,
-      "settings": {
-        "image": "shopify:\/\/shop_images\/134282629.jpg",
-        "title": "Welcome to Our Storedfsdfsdafdsf",
-        "intro_text": "This is some introductory text about our store."
-      }
-    },
     "home_2_ktQpg9": {
       "type": "home_2",
       "settings": {
         "image": "shopify:\/\/shop_images\/ixmage_here.png",
-        "background_image": "shopify:\/\/shop_images\/Background.png",
+        "background_image": "shopify:\/\/shop_images\/Header_b51f3342-1064-4415-867f-c87117f8285c.png",
         "title": "Special Foods for your Eating",
         "intro_text": "Commodo ullamcorper a lacus vestibulum sed arcu non. Non blandit massa enim  Sem viverra aliquet eget sit amet tellus cras",
         "location_placeholder": "Enter your location..."
@@ -41,7 +19,6 @@
   },
   "order": [
     "banner",
-    "home_1_KN4wFP",
     "home_2_ktQpg9"
   ]
 }
