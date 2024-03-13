@@ -15,10 +15,19 @@
         "intro_text": "Commodo ullamcorper a lacus vestibulum sed arcu non. Non blandit massa enim  Sem viverra aliquet eget sit amet tellus cras",
         "location_placeholder": "Enter your location..."
       }
+    },
+    "home_1_cPUrrD": {
+      "type": "home_1",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/image_here.png",
+        "title": "Welcome to Our Store",
+        "intro_text": "This is some introductory text about our store."
+      }
     }
   },
   "order": [
     "banner",
-    "home_2_ktQpg9"
+    "home_2_ktQpg9",
+    "home_1_cPUrrD"
   ]
 }
