@@ -21,15 +21,26 @@
       "block_order": [
         "form_R7bxJR"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/134282629.jpg",
         "title": "Welcome to Our Storedfsdfsdafdsf",
         "intro_text": "This is some introductory text about our store."
       }
+    },
+    "home_2_ktQpg9": {
+      "type": "home_2",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/Background.png",
+        "title": "Welcome to Our Store",
+        "intro_text": "This is some introductory text about our store.",
+        "location_placeholder": "Enter your location..."
+      }
     }
   },
   "order": [
     "banner",
-    "home_1_KN4wFP"
+    "home_1_KN4wFP",
+    "home_2_ktQpg9"
   ]
 }
