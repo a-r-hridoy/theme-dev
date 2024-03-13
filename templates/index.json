@@ -31,9 +31,10 @@
     "home_2_ktQpg9": {
       "type": "home_2",
       "settings": {
+        "image": "shopify:\/\/shop_images\/ixmage_here.png",
         "background_image": "shopify:\/\/shop_images\/Background.png",
-        "title": "Welcome to Our Store",
-        "intro_text": "This is some introductory text about our store.",
+        "title": "Special Foods for your Eating",
+        "intro_text": "Commodo ullamcorper a lacus vestibulum sed arcu non. Non blandit massa enim  Sem viverra aliquet eget sit amet tellus cras",
         "location_placeholder": "Enter your location..."
       }
     }
