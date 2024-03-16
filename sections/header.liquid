@@ -177,36 +177,39 @@
   </script>
 </head>
 
-{% schema %}
-{
-  "name": "Header",
-  "settings": [
-    {
-      "type": "image_picker",
-      "id": "logo",
-      "label": "Select logo",
-      "info": "Recommnended siz: 100x100px"
-    },
-    {
-      "type": "image_picker",
-      "id": "user_img",
-      "label": "Select user_img",
-      "info": "Recommnended siz: 50x50px"
-    },
-    {
-      "type": "link_list",
-      "id": "menu",
-      "label": "Select Menu"
-    },
-    {
-      "type": "header",
-      "content": "Search bar"
-    }, {
-      "type": "checkbox",
-      "id": "enable_search_box",
-      "label": "Enable_search_box",
-      "default": true
-    }
-  ]
+{% comment %}
+  {% schema %}
+  {
+    "name": "Header",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "logo",
+        "label": "Select logo",
+        "info": "Recommnended siz: 100x100px"
+      },
+      {
+        "type": "image_picker",
+        "id": "user_img",
+        "label": "Select user_img",
+        "info": "Recommnended siz: 50x50px"
+      },
+      {
+        "type": "link_list",
+        "id": "menu",
+        "label": "Select Menu"
+      },
+      {
+        "type": "header",
+        "content": "Search bar"
+      }, {
+        "type": "checkbox",
+        "id": "enable_search_box",
+        "label": "Enable_search_box",
+        "default": true
+      }
+    ]
+  }
+  {% endschema %}
+{% endcomment %}
 }
-{% endschema %}
