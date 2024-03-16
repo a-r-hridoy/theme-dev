@@ -41,6 +41,20 @@
           {{ shop.name }}
         </h1>
       </div>
+      <div class="hidden md:flex space-x-10">
+        {% for link in section.settings.menu.links %}
+          {% if link.links != blank %}
+            <div class="relative">
+              <button class="inline-flex items-center">
+                {{ link.title }}
+                {% render 'icon_dropdown' %}
+              </button>
+            </div>
+          {% else %}
+            <a href="{{ link.url }}" class="text-base text-gray-500 hover:text-gray-700">{{ link.title }}</a>
+          {% endif %}
+        {% endfor %}
+      </div>
     </div>
   </div>
 </div>
@@ -48,52 +62,13 @@
 
 {% schema %}
   {
-    "name": "Home",
+    "name": "header",
     "settings": [
       {
-        "type": "image_picker",
-        "id": "image",
-        "label": "Background Image"
-      }, {
-        "type": "text",
-        "id": "title",
-        "label": "Section Title",
-        "default": "Welcome to Our Store"
-      }, {
-        "type": "text",
-        "id": "intro_text",
-        "label": "Introductory Text",
-        "default": "This is some introductory text about our store."
-      }
-    ],
-    "blocks": [
-      {
-        "type": "form",
-        "name": "Pickup Form",
-        "settings": [
-          {
-            "type": "text",
-            "id": "location_label",
-            "label": "Location Label",
-            "default": "Location:"
-          }, {
-            "type": "text",
-            "id": "location_placeholder",
-            "label": "Location Placeholder",
-            "default": "Enter your location..."
-          }, {
-            "type": "text",
-            "id": "button_label",
-            "label": "Button Label",
-            "default": "Pickup"
-          }
-        ]
-      }
-    ],
-    "presets": [
-      {
-        "category": "Custom",
-        "name": "Home Section"
+        "type": "link_list",
+        "id": "menu",
+        "default": "main-menu",
+        "label": "Heading Navigation Menu"
       }
     ]
   }
