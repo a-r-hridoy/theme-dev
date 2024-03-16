@@ -143,13 +143,26 @@
 
 <head>
   <!-- Other meta tags and stylesheets -->
+
+  <!-- Schema Markup for Organization -->
   <script type="application/ld+json">
     {
       "@context": "http://schema.org",
       "@type": "Organization",
       "name": "{{ shop.name }}",
       "url": "{{ shop.url }}",
-      "logo": "{{ settings.logo | img_url: 'master' }}"
+      "logo": "{{ settings.logo | img_url: 'master' }}",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "{{ shop.phone }}",
+        "contactType": "customer service",
+        "areaServed": "{{ shop.country }}"
+      },
+      "sameAs": [
+        {% for social_link in shop.social_links %}
+          "{{ social_link }}"{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      ]
     }
   </script>
 </head>
