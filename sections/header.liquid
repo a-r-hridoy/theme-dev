@@ -298,6 +298,50 @@
   <!-- navbar-end -->
 {% endcomment %}
 
+{% if template == 'index' %}
+  {% assign page_type = 'HomePage' %}
+{% elsif template == 'product' %}
+  {% assign page_type = 'Product' %}
+{% elsif template == 'collection' %}
+  {% assign page_type = 'Collection' %}
+{% elsif template == 'page' %}
+  {% assign page_type = 'Page' %}
+{% endif %}
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "{{ page_type }}",
+    "name": "{{ shop.name }}",
+    "url": "{{ shop.url }}",
+    "description": "{{ shop.description | escape }}",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "{{ shop.url }}/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    },
+    "hasMap": "{{ shop.address | map_url }}",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "{{ shop.address }}",
+      "addressLocality": "{{ shop.city }}",
+      "addressRegion": "{{ shop.province }}",
+      "postalCode": "{{ shop.zip }}",
+      "addressCountry": "{{ shop.country }}"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "{{ shop.phone }}",
+      "contactType": "Customer service"
+    },
+    "sameAs": [
+      {% for social_link in shop.social_links %}
+        "{{ social_link }}"{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]
+  }
+</script>
+
 {% schema %}
 {
   "name": "Header",
