@@ -179,6 +179,19 @@
   </div>
 </nav>
 
+<head>
+  <!-- Other meta tags and stylesheets -->
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "{{ shop.name }}",
+      "url": "{{ shop.url }}",
+      "logo": "{{ settings.logo | img_url: 'master' }}"
+    }
+  </script>
+</head>
+
 {% schema %}
 {
   "name": "Header",
