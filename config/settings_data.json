@@ -141,11 +141,15 @@
         "settings": {
           "logo": "shopify:\/\/shop_images\/pngtree-letter-h-logo-png-png-image_6091297.png",
           "menu": "main-menu",
-          "enable_search_box": true
+          "enable_search_box": false
         }
       },
       "footer": {
         "type": "footer",
+        "custom_css": [
+          "{background-color: #000; padding: 15px; color: #fff;}",
+          "p {margin: 0;}"
+        ],
         "settings": {
         }
       }
