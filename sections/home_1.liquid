@@ -1,26 +1,25 @@
-<section class="banner" style="background-image: url('{{ section.settings.background_image | img_url: 'large' }}');">
-  <div class="container container_large">
-    <div class="row justify-content-between align-items-center">
-      <div class="col-xxl-6 col-lg-6 col-xl-6 col-md-9">
-        <div class="banner_text wow fadeInUp">
-          <h5>{{ section.settings.title }}</h5>
-          <h1>
-            {{ section.settings.title }}
-          </h1>
-          <p>{{ section.settings.intro_text }}</p>
-          <form>
-            <input type="text" placeholder="Enter Your Location">
-            <div class="banner_btn_area d-flex flex-wrap align-items-center">
-              <button class="common_btn" type="submit">Pickup</button>
-              <span>or</span>
-              <button class="common_btn" type="submit">Delivery</button>
-            </div>
-          </form>
+<section class="home">
+  <div class="home-section">
+    <div class="container">
+      <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-md-6">
+          <div class="text-column">
+            <h2>{{ section.settings.title }}</h2>
+            <p>{{ section.settings.intro_text }}</p>
+            <form>
+              <label for="location">Location:</label>
+              <input
+                type="text"
+                id="location"
+                name="location"
+                placeholder="Enter your location...">
+              <button type="submit">Pickup</button>
+            </form>
+          </div>
+
         </div>
-      </div>
-      <div class="col-xxl-5 col-lg-6 col-xl-6">
-        <div class="banner_img wow fadeInRight">
-          <div class="img">
+        <div class="col-md-6">
+          <div class="image-column">
             <img
               src="{{ section.settings.image | img_url: 'large' }}"
               alt="{{ section.settings.image }} "
@@ -36,17 +35,12 @@
 
 {% schema %}
   {
-    "name": "banner-2",
+    "name": "Home",
     "settings": [
       {
         "type": "image_picker",
         "id": "image",
         "label": "Background Image"
-      }, {
-        "type": "text",
-        "id": "title",
-        "label": "Section Title",
-        "default": "Welcome to Our Store"
       }, {
         "type": "text",
         "id": "title",
