@@ -28,12 +28,18 @@
       "type": "gp-global-section-505206443650057095",
       "settings": {
       }
+    },
+    "gp_global_section_505214775500735367_yrFURz": {
+      "type": "gp-global-section-505214775500735367",
+      "settings": {
+      }
     }
   },
   "order": [
     "banner",
     "home_2_ktQpg9",
     "home_1_cPUrrD",
-    "gp_global_section_505206443650057095_Rc6UJw"
+    "gp_global_section_505206443650057095_Rc6UJw",
+    "gp_global_section_505214775500735367_yrFURz"
   ]
 }
