@@ -31,6 +31,10 @@
     },
     "gp_global_section_505214775500735367_yrFURz": {
       "type": "gp-global-section-505214775500735367",
+      "custom_css": [
+        ".gp-carousel-action-next {position: absolute; top: -36px; right: 30px; background: black; padding: 5px; width: 35px; height: 35px;}",
+        ".gp-carousel-action-back {position: absolute; top: 0; right: 300px; background: black; padding: 5px; width: 35px; height: 35px;}"
+      ],
       "settings": {
       }
     }
