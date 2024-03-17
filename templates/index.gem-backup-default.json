@@ -1,0 +1,30 @@
+{
+  "sections": {
+    "banner": {
+      "type": "banner",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "home_2_ktQpg9": {
+      "type": "home_2",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/ixmage_here.png",
+        "background_image": "shopify:\/\/shop_images\/Header_b51f3342-1064-4415-867f-c87117f8285c.png",
+        "title": "Special Foods for your Eating",
+        "intro_text": "Commodo ullamcorper a lacus vestibulum sed arcu non. Non blandit massa enim  Sem viverra aliquet eget sit amet tellus cras",
+        "location_placeholder": "Enter your location..."
+      }
+    },
+    "home_1_cPUrrD": {
+      "type": "home_1",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "home_2_ktQpg9",
+    "home_1_cPUrrD"
+  ]
+}
