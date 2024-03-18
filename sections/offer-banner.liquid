@@ -1,4 +1,4 @@
-<section class="add_banner_full mt_140 xs_mt_100 pt_155 xs_pt_100 pb_155 xs_pb_100" style="background: url(assets/images/add_banner_full_bg.jpg);">
+<section class="add_banner_full mt_140 xs_mt_100 pt_155 xs_pt_100 pb_155 xs_pb_100" style="background-image: url('{{ section.settings.background_image | img_url: 'large' }}');">
   <div class="container">
     <div class="row">
       <div class="col-xl-5 col-md-6 wow fadeInLeft">
@@ -37,11 +37,18 @@
         "type": "image_picker",
         "id": "saleImage",
         "label": "Image"
-      }, {
+      },
+      {
         "type": "image_picker",
         "id": "image",
         "label": "Image"
-      }, {
+      },
+      {
+        "type": "image_picker",
+        "id": "background_image",
+        "label": "Background Image"
+      },
+      {
         "type": "text",
         "id": "subtitle",
         "label": "Section Sub Title",
