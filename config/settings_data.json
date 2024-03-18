@@ -1,6 +1,7 @@
 {
   "current": {
-    "logo_width": 290,
+    "logo_width": 300,
+    "favicon": "shopify:\/\/shop_images\/logo_7e53380f-b500-463f-8c7a-7addfeca3adb.png",
     "type_header_font": "assistant_n4",
     "heading_scale": 100,
     "type_body_font": "assistant_n4",
