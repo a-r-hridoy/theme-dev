@@ -36,11 +36,6 @@
       ],
       "settings": {
       }
-    },
-    "gp_global_section_505343986504827783_yQN9M8": {
-      "type": "gp-global-section-505343986504827783",
-      "settings": {
-      }
     }
   },
   "order": [
@@ -48,7 +43,6 @@
     "home_2_ktQpg9",
     "home_1_cPUrrD",
     "gp_global_section_505206443650057095_Rc6UJw",
-    "gp_global_section_505214775500735367_yrFURz",
-    "gp_global_section_505343986504827783_yQN9M8"
+    "gp_global_section_505214775500735367_yrFURz"
   ]
 }
