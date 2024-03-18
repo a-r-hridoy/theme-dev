@@ -130,16 +130,11 @@
           "color_scheme": "scheme-1"
         }
       },
-      "announcement-bar": {
-        "type": "announcement-bar",
-        "settings": {
-          "text": "sdfskdjfkjasdf"
-        }
-      },
       "header": {
         "type": "header",
         "settings": {
-          "logo": "shopify:\/\/shop_images\/pngtree-letter-h-logo-png-png-image_6091297.png",
+          "logo": "shopify:\/\/shop_images\/logo_7e53380f-b500-463f-8c7a-7addfeca3adb.png",
+          "cartIconImg": "shopify:\/\/shop_images\/cart_icon_1.png",
           "menu": "main-menu",
           "enable_search_box": false
         }
