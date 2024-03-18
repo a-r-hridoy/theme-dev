@@ -52,6 +52,11 @@
         "subtitle": "TODAY SPECIAL OFFER",
         "title": "DELICIOUS FOOD WITH US."
       }
+    },
+    "pop_up_XrNcdy": {
+      "type": "pop_up",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -61,6 +66,7 @@
     "gp_global_section_505206443650057095_Rc6UJw",
     "gp_global_section_505214775500735367_yrFURz",
     "gp_global_section_505343986504827783_yQN9M8",
-    "offer_banner_dg6D4E"
+    "offer_banner_dg6D4E",
+    "pop_up_XrNcdy"
   ]
 }
