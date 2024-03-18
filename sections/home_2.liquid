@@ -1,36 +1,36 @@
-<section class="home-section-2" style="background-image: url('{{ section.settings.background_image | img_url: 'large' }}');">
-  <div class="home-section">
-    <div class="container">
-      <div class="row d-flex align-items-center justify-content-center">
-        <div class="col-md-6">
-          <div class="text-column">
-            <h2>{{ section.settings.title }}</h2>
-            <p>{{ section.settings.intro_text }}</p>
-            <form>
-              <label for="location">Location:</label>
-              <input
-                type="text"
-                id="location"
-                name="location"
-                placeholder="{{ section.settings.location_placeholder }}">
-              <button type="submit">Pickup</button>
-            </form>
+{% comment %} <section class="home-section-2" style="background-image: url('{{ section.settings.background_image | img_url: 'large' }}');">
+    <div class="home-section">
+      <div class="container">
+        <div class="row d-flex align-items-center justify-content-center">
+          <div class="col-md-6">
+            <div class="text-column">
+              <h2>{{ section.settings.title }}</h2>
+              <p>{{ section.settings.intro_text }}</p>
+              <form>
+                <label for="location">Location:</label>
+                <input
+                  type="text"
+                  id="location"
+                  name="location"
+                  placeholder="{{ section.settings.location_placeholder }}">
+                <button type="submit">Pickup</button>
+              </form>
+            </div>
           </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="image-column">
-            <img
-              src="{{ section.settings.image | img_url: 'large' }}"
-              alt="{{ section.settings.image }} "
-              width="auto"
-              height="auto">
+  
+          <div class="col-md-6">
+            <div class="image-column">
+              <img
+                src="{{ section.settings.image | img_url: 'large' }}"
+                alt="{{ section.settings.image }} "
+                width="auto"
+                height="auto">
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+</section> {% endcomment %}
 
 
 {% schema %}
