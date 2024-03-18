@@ -32,6 +32,7 @@
     },
     "home_2_EbKf7c": {
       "type": "home_2",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/ixmage_here.png",
         "background_image": "shopify:\/\/shop_images\/Header_b51f3342-1064-4415-867f-c87117f8285c.png",
@@ -39,11 +40,29 @@
         "intro_text": "This is some introductory text about our store.",
         "location_placeholder": "Enter your location..."
       }
+    },
+    "gp_global_section_505206443650057095_pBBiqH": {
+      "type": "gp-global-section-505206443650057095",
+      "settings": {
+      }
+    },
+    "gp_global_section_505214775500735367_JEJrQr": {
+      "type": "gp-global-section-505214775500735367",
+      "settings": {
+      }
+    },
+    "gp_global_section_505343986504827783_myHrrW": {
+      "type": "gp-global-section-505343986504827783",
+      "settings": {
+      }
     }
   },
   "order": [
     "banner",
     "product-grid",
-    "home_2_EbKf7c"
+    "home_2_EbKf7c",
+    "gp_global_section_505206443650057095_pBBiqH",
+    "gp_global_section_505214775500735367_JEJrQr",
+    "gp_global_section_505343986504827783_myHrrW"
   ]
 }
