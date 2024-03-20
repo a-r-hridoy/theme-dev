@@ -44,7 +44,10 @@
   <div class="container">
     <div class="row">
       <div class="col-xl-8 col-lg-7 wow fadeInUp">
-        <div class="add_banner_large" style="background: url(assets/images/large_banner_img_1.jpg);">
+        <div
+          class="add_banner_large"
+          style="background-image: url('{{ section.settings.background_image_1 | img_url: 'large' }}');"
+        >
           <div class="text">
             <h3>The best Burger place in town</h3>
             <a href="menu_details.html"> order now <i class="fas fa-chevron-circle-right"></i> </a>
@@ -52,7 +55,10 @@
         </div>
       </div>
       <div class="col-xl-4 col-lg-5 wow fadeInUp">
-        <div class="add_banner_small" style="background: url(assets/images/small_banner_img_1.jpg);">
+        <div
+          class="add_banner_small"
+          style="background-image: url('{{ section.settings.background_image_2 | img_url: 'large' }}');"
+        >
           <div class="text">
             <h3>Great Value Mixed Drinks</h3>
             <a href="menu_details.html"> order now <i class="fas fa-chevron-circle-right"></i> </a>
@@ -77,6 +83,16 @@
       "id": "Categories_title",
       "label": "Title",
       "default": "Popular category"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image_1",
+      "label": "Background Image 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image_2",
+      "label": "Background Image 2"
     }
   ],
   "blocks": [
