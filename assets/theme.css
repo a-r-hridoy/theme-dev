@@ -1495,7 +1495,7 @@ header .header_right .nice-select:after {
    background: url(https://cdn.shopify.com/s/files/1/0648/4908/4594/files/505206411655906183-95dd6a99-1aad-4bd3-b385-9ad6353cb4f0.svg?v=1710665336) !important;
    background-position: center !important;;
    background-repeat: no-repeat !important;;
-   background-size: cover !important;;
+   background-size: contain !important;;
    top: 1px;
    left: 0;
    width: 35px;
