@@ -51,7 +51,9 @@
         "slider_TiTe4g"
       ],
       "settings": {
-        "Categories_title": "Popular category"
+        "Categories_title": "Popular category",
+        "background_image_1": "shopify:\/\/shop_images\/large_banner_img_1.jpg",
+        "background_image_2": "shopify:\/\/shop_images\/large_banner_img_2.jpg"
       }
     }
   },
