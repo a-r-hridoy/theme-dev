@@ -62,6 +62,7 @@
       "type": "offer-banner",
       "settings": {
         "saleImage": "shopify:\/\/shop_images\/cart_icon_1.png",
+        "icon_image": "shopify:\/\/shop_images\/Group.png",
         "background_image": "shopify:\/\/shop_images\/505206411655906183-9a737f00-da8d-4856-aa0f-76cc6160433d.png",
         "subtitle": "TODAY SPECIAL OFFER",
         "title": "DELICIOUS FOOD WITH US."
