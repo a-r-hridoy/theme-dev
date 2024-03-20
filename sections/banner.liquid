@@ -5,7 +5,7 @@
         <div class="banner_text wow fadeInUp">
           <h5>{{ section.settings.title }}</h5>
           <h1>{{ section.settings.intro_text }}</h1>
-          <p>{{ section.settings.description }}</p>
+          <p>{{ section.settings.rte }}</p>
           <form>
             <input type="text" placeholder="Enter Your Location">
             <div class="banner_btn_area d-flex flex-wrap align-items-center">
@@ -23,7 +23,8 @@
               src="{{ section.settings.banner_image | img_url: 'large' }}"
               alt="banner"
               width="auto"
-              height="auto">
+              height="auto"
+            >
           </div>
         </div>
       </div>
@@ -31,53 +32,56 @@
   </div>
 </section>
 
-
 {% schema %}
-  {
-    "name": "banner",
-    "settings": [
-      {
-        "type": "image_picker",
-        "id": "banner_image",
-        "label": "Banner Image"
-      },
-      {
-        "type": "image_picker",
-        "id": "background_image",
-        "label": "Background Image"
-      },
-      {
-        "type": "text",
-        "id": "title",
-        "label": "Section Title",
-        "default": "Welcome to Our Store"
-      },
+{
+  "name": "banner",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "banner_image",
+      "label": "Banner Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Welcome to Our Store"
+    },
 
-      {
-        "type": "text",
-        "id": "intro_text",
-        "label": "Introductory Text",
-        "default": "This is some introductory text about our store."
-      }, {
-        "type": "richtext",
-        "id": "description",
-        "label": "Description",
-        "default": "Commodo ullamcorper a lacus vestibulum sed arcu non. Non blandit massa enim Sem viverra aliquet eget sit amet tellus cras</p> dynami and give schema code"
-      }, {
-        "type": "text",
-        "id": "pickup_button_text",
-        "label": "Picup"
-      }, {
-        "type": "text",
-        "id": "delivery_button_text",
-        "label": "Delivery"
-      }
-    ],
-    "presets": [
-      {
-        "name": "banner"
-      }
-    ]
-  }
+    {
+      "type": "text",
+      "id": "intro_text",
+      "label": "Introductory Text",
+      "default": "This is some introductory text about our store."
+    }, {
 
+  "type": "richtext",
+  "id": "rte",
+  "label": "Details",
+  "default": "<p>Commodo ullamcorper a lacus vestibulum sed arcu non. Non blandit massa enim Sem viverra aliquet eget sit amet tellus cras</p>"
+},
+
+    {
+      "type": "text",
+      "id": "pickup_button_text",
+      "label": "Button label",
+      "default": "Picup"
+    }, {
+      "type": "text",
+      "id": "delivery_button_text",
+      "label": "Button label",
+      "default": "Delivery"
+    }
+  ],
+  "presets": [
+    {
+      "name": "banner"
+    }
+  ]
+}
 {% endschema %}
