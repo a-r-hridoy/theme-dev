@@ -18,25 +18,29 @@
         "slider_wbytF9": {
           "type": "slider",
           "settings": {
-            "categories_img": "shopify:\/\/shop_images\/category_img_1.jpg"
+            "categories_img": "shopify:\/\/shop_images\/category_img_1.jpg",
+            "title": "Pizza"
           }
         },
         "slider_cXr6nA": {
           "type": "slider",
           "settings": {
-            "categories_img": "shopify:\/\/shop_images\/category_img_2.jpg"
+            "categories_img": "shopify:\/\/shop_images\/category_img_2.jpg",
+            "title": "Dessert"
           }
         },
         "slider_6XyicF": {
           "type": "slider",
           "settings": {
-            "categories_img": "shopify:\/\/shop_images\/category_img_4.jpg"
+            "categories_img": "shopify:\/\/shop_images\/category_img_4.jpg",
+            "title": "drink"
           }
         },
         "slider_TiTe4g": {
           "type": "slider",
           "settings": {
-            "categories_img": "shopify:\/\/shop_images\/category_img_1.jpg"
+            "categories_img": "shopify:\/\/shop_images\/category_img_1.jpg",
+            "title": "burger"
           }
         }
       },
