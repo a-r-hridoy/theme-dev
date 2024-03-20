@@ -11,9 +11,15 @@
         "pickup_button_text": "Picup",
         "delivery_button_text": "Delivery"
       }
+    },
+    "categories_XjbnTE": {
+      "type": "categories",
+      "settings": {
+      }
     }
   },
   "order": [
-    "banner_tU83EU"
+    "banner_tU83EU",
+    "categories_XjbnTE"
   ]
 }
