@@ -14,6 +14,17 @@
     },
     "categories_XjbnTE": {
       "type": "categories",
+      "blocks": {
+        "slider_wbytF9": {
+          "type": "slider",
+          "settings": {
+            "categories_img": "shopify:\/\/shop_images\/banner_img_296188b4-9b4d-457d-ba69-a0f0a7968236.png"
+          }
+        }
+      },
+      "block_order": [
+        "slider_wbytF9"
+      ],
       "settings": {
       }
     }
