@@ -1,6 +1,75 @@
+<!--
+  ==========================
+      CATEGORY START
+  ===========================
+-->
+<section class="category pt_130 xs_pt_90">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-8 wow fadeInUp">
+        <div class="section_heading heading_left mb_50">
+          <h2>Our Popular category</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row category_slider">
+      <div class="col-xl-3 wow fadeInUp">
+        <a href="menu_03.html" class="category_item">
+          <img src="assets/images/category_img_1.jpg" alt="category" class="img-fluid w-100">
+          <h3>Pizza</h3>
+        </a>
+      </div>
+      <div class="col-xl-3 wow fadeInUp">
+        <a href="menu_03.html" class="category_item">
+          <img src="assets/images/category_img_2.jpg" alt="category" class="img-fluid w-100">
+          <h3>Dessert</h3>
+        </a>
+      </div>
+      <div class="col-xl-3 wow fadeInUp">
+        <a href="menu_03.html" class="category_item">
+          <img src="assets/images/category_img_3.jpg" alt="category" class="img-fluid w-100">
+          <h3>Burger</h3>
+        </a>
+      </div>
+      <div class="col-xl-3 wow fadeInUp">
+        <a href="menu_03.html" class="category_item">
+          <img src="assets/images/category_img_4.jpg" alt="category" class="img-fluid w-100">
+          <h3>Drinks</h3>
+        </a>
+      </div>
+      <div class="col-xl-3 wow fadeInUp">
+        <a href="menu_03.html" class="category_item">
+          <img src="assets/images/category_img_2.jpg" alt="category" class="img-fluid w-100">
+          <h3>Dessert</h3>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!--
+  ==========================
+      CATEGORY END
+  ===========================
+-->
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Categories",
+  "settings": [ ],
+  "blocks": [
+    {
+      "type":"slider",
+      "name": "Slide",
+      "settings":[
+        {
+          "type": "image_picker",
+          "id": "categories_img",
+          "label": "Categories_img"
+        }
+      ]
+
+    }
+  ]
+
+}
 {% endschema %}
