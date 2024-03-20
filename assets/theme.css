@@ -1462,7 +1462,7 @@ header .header_right .nice-select:after {
 .banner_img .img::after {
    position: absolute;
    content: "";
-   background: url(../images/banner_shapes.png);
+   background-image: url('{{ section.settings.banner_shapes_image | img_url: 'large' }}');
    background-position: center;
    background-repeat: no-repeat;
    width: 350px;
@@ -1478,6 +1478,7 @@ header .header_right .nice-select:after {
    animation: zoomAnimi linear 3s infinite alternate;
    -webkit-animation: zoomAnimi linear 3s infinite alternate;
 }
+
 
 /* banner end */
 
