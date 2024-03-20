@@ -53,12 +53,23 @@
       "settings": {
         "Categories_title": "Popular category",
         "background_image_1": "shopify:\/\/shop_images\/large_banner_img_1.jpg",
-        "background_image_2": "shopify:\/\/shop_images\/large_banner_img_2.jpg"
+        "ct_banner_title_1": "THE BEST BURGER PLACE IN TOWN",
+        "background_image_2": "shopify:\/\/shop_images\/large_banner_img_2.jpg",
+        "ct_banner_title_2": "GREAT VALUE MIXED DRINKS"
+      }
+    },
+    "offer_banner_UEMbee": {
+      "type": "offer-banner",
+      "settings": {
+        "saleImage": "shopify:\/\/shop_images\/large_banner_img_2.jpg",
+        "subtitle": "TODAY SPECIAL OFFER",
+        "title": "DELICIOUS FOOD WITH US."
       }
     }
   },
   "order": [
     "banner_tU83EU",
-    "categories_XjbnTE"
+    "categories_XjbnTE",
+    "offer_banner_UEMbee"
   ]
 }
