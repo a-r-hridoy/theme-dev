@@ -71,7 +71,14 @@
 {% schema %}
 {
   "name": "Categories",
-  "settings": [ ],
+  "settings": [
+    {
+      "type": "text",
+      "id": "Categories_title",
+      "label": "Title",
+      "default": "Popular category"
+    }
+  ],
   "blocks": [
     {
       "type":"slider",
