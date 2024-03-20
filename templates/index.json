@@ -4,14 +4,11 @@
       "type": "banner",
       "disabled": true,
       "settings": {
-      }
-    },
-    "gp_global_section_505206443650057095_Rc6UJw": {
-      "type": "gp-global-section-505206443650057095",
-      "custom_css": [
-        "#gCZu8TU899 {margin-top: 100px;}"
-      ],
-      "settings": {
+        "title": "Welcome to Our Store",
+        "intro_text": "This is some introductory text about our store.",
+        "rte": "<p>Commodo ullamcorper a lacus vestibulum sed arcu non. Non blandit massa enim Sem viverra aliquet eget sit amet tellus cras<\/p>",
+        "pickup_button_text": "Picup",
+        "delivery_button_text": "Delivery"
       }
     },
     "offer_banner_dg6D4E": {
@@ -24,11 +21,23 @@
         "subtitle": "TODAY SPECIAL OFFER",
         "title": "DELICIOUS FOOD WITH US."
       }
+    },
+    "banner_rGdyWM": {
+      "type": "banner",
+      "settings": {
+        "banner_image": "shopify:\/\/shop_images\/505206411655906183-fa962733-a85c-4212-b609-6e7d0a2f1e30.png",
+        "background_image": "shopify:\/\/shop_images\/505206411655906183-d123ea45-0358-4d67-b88b-85b4feaa1622.jpg",
+        "title": "Welcome to Our Store",
+        "intro_text": "This is some introductory text about our store.",
+        "rte": "<p>Commodo ullamcorper a lacus vestibulum sed arcu non. Non blandit massa enim Sem viverra aliquet eget sit amet tellus cras<\/p>",
+        "pickup_button_text": "Picup",
+        "delivery_button_text": "Delivery"
+      }
     }
   },
   "order": [
     "banner",
-    "gp_global_section_505206443650057095_Rc6UJw",
-    "offer_banner_dg6D4E"
+    "offer_banner_dg6D4E",
+    "banner_rGdyWM"
   ]
 }
