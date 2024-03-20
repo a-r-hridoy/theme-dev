@@ -17,7 +17,7 @@
         </div>
       </div>
       <div class="col-xxl-5 col-lg-6 col-xl-6">
-        <div class="banner_img wow fadeInRight">
+        <div class="banner_img wow fadeInRight  style="background-image: url('{{ section.settings.background_image_2 | img_url: 'large' }}');">
           <div class="img">
             <img
               src="{{ section.settings.banner_image | img_url: 'large' }}"
@@ -45,6 +45,11 @@
       "type": "image_picker",
       "id": "background_image",
       "label": "Background Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image_2",
+      "label": "Background Image 2"
     },
     {
       "type": "text",
