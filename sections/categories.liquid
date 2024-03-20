@@ -16,7 +16,12 @@
       {% for block in section.blocks %}
         <div class="col-xl-3 wow fadeInUp">
           <a href="menu_03.html" class="category_item">
-            <img src="{{ block.settings.categories_img }}" class="img-fluid w-100" alt="categories_img">
+            <img
+              src="{{ block.settings.categories_img | img_url: 'large' }}"
+              alt="banner"
+              width="auto"
+              height="auto"
+            >
             <h3>Pizza</h3>
           </a>
         </div>
