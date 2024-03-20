@@ -1462,7 +1462,7 @@ header .header_right .nice-select:after {
 .banner_img .img::after {
    position: absolute;
    content: "";
-   background-image: url('{{ section.settings.banner_shapes_image | img_url: 'large' }}');
+   background-image: url(https://cdn.shopify.com/s/files/1/0648/4908/4594/files/505206411655906183-cb24eb84-c70f-455e-a195-aaf0673c211c.png?v=1710657292) !important;
    background-position: center;
    background-repeat: no-repeat;
    width: 350px;
