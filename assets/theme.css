@@ -45,6 +45,10 @@ CSS INDEX
    padding: 0;
 }
 
+section{
+  padding: 100px 0;
+}
+
 ul,
 ol,
 li {
