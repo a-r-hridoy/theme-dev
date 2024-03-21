@@ -8,7 +8,8 @@
     <link
       rel="icon"
       type="image/png"
-      href="assets/images/favicon.png">
+      href="assets/images/favicon.png"
+    >
     <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/nice-select.css">
@@ -25,15 +26,13 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 
-
     {{ 'theme.css' | asset_url | stylesheet_tag }}
-
 
     {{ content_for_header }}
 
-  {% render 'gp-head' %}
-</head>
+    {% render 'gp-head' %}
+  </head>
   <body><main class="main">
         {{ content_for_layout }}
-    </main></body>
+      </main></body>
 </html>

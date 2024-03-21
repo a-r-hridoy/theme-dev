@@ -1,30 +1,88 @@
 {
   "sections": {
-    "banner": {
+    "banner_tU83EU": {
       "type": "banner",
-      "disabled": true,
       "settings": {
+        "banner_image": "shopify:\/\/shop_images\/banner_img_296188b4-9b4d-457d-ba69-a0f0a7968236.png",
+        "background_image": "shopify:\/\/shop_images\/505206411655906183-d123ea45-0358-4d67-b88b-85b4feaa1622.jpg",
+        "title": "DELICIOUS FOOD",
+        "intro_text": "SPECIAL FOODS FOR YOUR EATING",
+        "rte": "<p>Commodo ullamcorper a lacus vestibulum sed arcu non. Non blandit massa enim Sem viverra aliquet eget sit amet tellus cras<\/p>",
+        "pickup_button_text": "Picup",
+        "delivery_button_text": "Delivery"
       }
     },
-    "home_2_ktQpg9": {
-      "type": "home_2",
+    "categories_XjbnTE": {
+      "type": "categories",
+      "blocks": {
+        "slider_wbytF9": {
+          "type": "slider",
+          "settings": {
+            "categories_img": "shopify:\/\/shop_images\/category_img_1.jpg",
+            "title": "Pizza"
+          }
+        },
+        "slider_cXr6nA": {
+          "type": "slider",
+          "settings": {
+            "categories_img": "shopify:\/\/shop_images\/category_img_2.jpg",
+            "title": "Dessert"
+          }
+        },
+        "slider_6XyicF": {
+          "type": "slider",
+          "settings": {
+            "categories_img": "shopify:\/\/shop_images\/category_img_4.jpg",
+            "title": "drink"
+          }
+        },
+        "slider_TiTe4g": {
+          "type": "slider",
+          "settings": {
+            "categories_img": "shopify:\/\/shop_images\/category_img_1.jpg",
+            "title": "burger"
+          }
+        }
+      },
+      "block_order": [
+        "slider_wbytF9",
+        "slider_cXr6nA",
+        "slider_6XyicF",
+        "slider_TiTe4g"
+      ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/ixmage_here.png",
-        "background_image": "shopify:\/\/shop_images\/Header_b51f3342-1064-4415-867f-c87117f8285c.png",
-        "title": "Special Foods for your Eating",
-        "intro_text": "Commodo ullamcorper a lacus vestibulum sed arcu non. Non blandit massa enim  Sem viverra aliquet eget sit amet tellus cras",
-        "location_placeholder": "Enter your location..."
+        "Categories_title": "Popular category",
+        "background_image_1": "shopify:\/\/shop_images\/large_banner_img_1.jpg",
+        "ct_banner_title_1": "THE BEST BURGER PLACE IN TOWN",
+        "background_image_2": "shopify:\/\/shop_images\/large_banner_img_2.jpg",
+        "ct_banner_title_2": "GREAT VALUE MIXED DRINKS"
       }
     },
-    "home_1_cPUrrD": {
-      "type": "home_1",
+    "offer_banner_UEMbee": {
+      "type": "offer-banner",
       "settings": {
+        "saleImage": "shopify:\/\/shop_images\/cart_icon_1.png",
+        "icon_image": "shopify:\/\/shop_images\/Group.png",
+        "background_image": "shopify:\/\/shop_images\/add_banner_full_bg.jpg",
+        "subtitle": "TODAY SPECIAL OFFER",
+        "title": "DELICIOUS FOOD WITH US."
+      }
+    },
+    "app_download_z68TCb": {
+      "type": "app_download",
+      "settings": {
+        "app_download_img": "shopify:\/\/shop_images\/download_img.png",
+        "app_download_title": "Are you Ready to Start your Order",
+        "app_download_description": "Commodo ullamcorper lacus vestibulum sed Non blandit massa enim.",
+        "app_store_icon": "shopify:\/\/shop_images\/apple_icon_884ae712-e2bc-4199-9fb3-282561344af2.png",
+        "play_store_icon": "shopify:\/\/shop_images\/play_store_icon_95d7f91d-b4eb-4b7e-aa10-92ed0d3cc098.png"
       }
     }
   },
   "order": [
-    "banner",
-    "home_2_ktQpg9",
-    "home_1_cPUrrD"
+    "banner_tU83EU",
+    "categories_XjbnTE",
+    "offer_banner_UEMbee",
+    "app_download_z68TCb"
   ]
 }
