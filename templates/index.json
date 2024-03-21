@@ -67,11 +67,19 @@
         "subtitle": "TODAY SPECIAL OFFER",
         "title": "DELICIOUS FOOD WITH US."
       }
+    },
+    "app_download_z68TCb": {
+      "type": "app_download",
+      "settings": {
+        "app_download_title": "Are you Ready to Start your Order",
+        "app_download_description": "Commodo ullamcorper lacus vestibulum sed Non blandit massa enim."
+      }
     }
   },
   "order": [
     "banner_tU83EU",
     "categories_XjbnTE",
-    "offer_banner_UEMbee"
+    "offer_banner_UEMbee",
+    "app_download_z68TCb"
   ]
 }
