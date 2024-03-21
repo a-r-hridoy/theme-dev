@@ -8,7 +8,12 @@
     <div class="row justify-content-between">
       <div class="col-xxl-5 col-md-6 col-lg-5 wow fadeInLeft">
         <div class="app_download_img">
-          <img src="{{ section.settings.app_download_img }}" alt="download" width="auto" height="auto">
+          <img
+            src="{{ section.settings.app_download_img | img_url: 'large' }}"
+            alt="download"
+            width="auto"
+            height="auto"
+          >
         </div>
       </div>
       <div class="col-xxl-5 col-md-6 col-lg-6 wow fadeInRight">
@@ -19,7 +24,12 @@
             <li>
               <a class="common_btn" href="#">
                 <span class="icon">
-                  <img src="{{ section.settings.app_store_icon }}" alt="download" width="auto" height="auto">
+                  <img
+                    src="{{ section.settings.app_store_icon | img_url: 'large' }}"
+                    alt="download"
+                    width="auto"
+                    height="auto"
+                  >
                 </span>
                 Apple Store</a
               >
@@ -27,7 +37,12 @@
             <li>
               <a class="common_btn" href="#">
                 <span class="icon">
-                  <img src="{{ section.settings.play_store_icon }}" alt="download" width="auto" height="auto">
+                  <img
+                    src="{{ section.settings.play_store_icon | img_url: 'large' }}"
+                    alt="download"
+                    width="auto"
+                    height="auto"
+                  >
                 </span>
                 Play Story</a
               >

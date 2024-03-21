@@ -71,8 +71,11 @@
     "app_download_z68TCb": {
       "type": "app_download",
       "settings": {
+        "app_download_img": "shopify:\/\/shop_images\/shape.png",
         "app_download_title": "Are you Ready to Start your Order",
-        "app_download_description": "Commodo ullamcorper lacus vestibulum sed Non blandit massa enim."
+        "app_download_description": "Commodo ullamcorper lacus vestibulum sed Non blandit massa enim.",
+        "app_store_icon": "shopify:\/\/shop_images\/apple_icon_884ae712-e2bc-4199-9fb3-282561344af2.png",
+        "play_store_icon": "shopify:\/\/shop_images\/play_store_icon_95d7f91d-b4eb-4b7e-aa10-92ed0d3cc098.png"
       }
     }
   },
