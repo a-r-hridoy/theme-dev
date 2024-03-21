@@ -2185,7 +2185,7 @@ header .header_right .nice-select:after {
    font-weight: 700;
    letter-spacing: -2.8px;
    text-transform: uppercase;
-   bottom: 66px;
+   bottom: 40px;
    right: 0;
    z-index: 1;
 }
@@ -9537,7 +9537,7 @@ footer .footer_info ul li a.linkedin:hover {
 
     .app_download::before {
         font-size: 100px;
-        bottom: 90px;
+        bottom: 110px;
     }
 
     .single_blog_img {
